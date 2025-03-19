@@ -44,7 +44,7 @@ const PagePreview: React.FC<PagePreviewProps> = ({
         </div>
       </div>
       {isActive && (
-        <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-primary/10 animate-fade-in"></div>
+        <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-primary/10"></div>
       )}
     </div>
   );

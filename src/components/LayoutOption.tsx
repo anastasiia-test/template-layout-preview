@@ -23,8 +23,8 @@ const LayoutOption: React.FC<LayoutOptionProps> = ({
   return (
     <div
       className={cn(
-        "layout-option-card h-44 animate-fade-in",
-        isSelected && "selected"
+        "layout-option-card h-44 rounded-lg border transition-all duration-300",
+        isSelected && "selected border-primary/70 ring-2 ring-primary/30"
       )}
       onClick={() => onSelect(id)}
       role="button"
@@ -40,7 +40,7 @@ const LayoutOption: React.FC<LayoutOptionProps> = ({
           loading="lazy"
         />
         {isSelected && (
-          <div className="absolute top-2 right-2 rounded-full bg-primary p-1 text-white shadow-md animate-scale-up">
+          <div className="absolute top-2 right-2 rounded-full bg-primary p-1 text-white shadow-md">
             <Check size={14} />
           </div>
         )}

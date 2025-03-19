@@ -160,13 +160,15 @@ const Index = () => {
         </div>
       </main>
 
-      <TemplateModal 
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        onSave={handleSave}
-        initialPages={selectedLayouts}
-        layouts={layoutOptions}
-      />
+      {isModalOpen && (
+        <TemplateModal 
+          isOpen={isModalOpen}
+          onClose={closeModal}
+          onSave={handleSave}
+          initialPages={selectedLayouts}
+          layouts={layoutOptions}
+        />
+      )}
 
       <footer className="py-6 px-8 border-t bg-white/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
