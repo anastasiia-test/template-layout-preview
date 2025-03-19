@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { ChevronLeft, ChevronRight, X, Check, PenTool, Pages, Columns, Save, Undo, Info } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X, Check, PenTool, FileText, Columns, Save, Undo, Info } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import PagePreview from './PagePreview';
 import LayoutOption from './LayoutOption';
@@ -131,7 +131,7 @@ const TemplateModal: React.FC<TemplateModalProps> = ({
           <div className="w-full sm:w-48 border-r bg-muted/30 p-4 space-y-4">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-sm font-medium text-muted-foreground flex items-center">
-                <Pages size={16} className="mr-2" />
+                <FileText size={16} className="mr-2" />
                 Pages
               </h3>
               {pages.length < 4 && (
